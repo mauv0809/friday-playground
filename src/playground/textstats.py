@@ -5,9 +5,7 @@ from collections import Counter
 
 def word_count(text: str) -> int:
     """Return the number of words in ``text``."""
-    if not text:
-        return 0
-    return len(text.split(" "))
+    return len(text.split())
 
 
 def top_words(text: str, n: int = 3) -> list[tuple[str, int]]:
